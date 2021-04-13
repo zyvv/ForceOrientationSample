@@ -6,7 +6,10 @@
 //
 
 import Foundation
-//
-//extension URL: StringLiteralType {
-//    
-//}
+
+extension URL: ExpressibleByStringLiteral {
+    
+    public init(stringLiteral value: StringLiteralType) {
+        self.init(string: "\(value)")!
+    }
+}

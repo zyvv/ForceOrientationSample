@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var isHideControlView: Bool = false
     @State private var hideControlViewTimer = Timer.publish(every: 5.0, on: .main, in: .common).autoconnect()
     
-    private var url = URL(string: "http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8")!
+    private var url: URL = "http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8"
     
     var body: some View {
         VStack {
